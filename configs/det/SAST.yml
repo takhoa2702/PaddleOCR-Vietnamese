@@ -53,7 +53,7 @@ Train:
   dataset:
     name: SimpleDataSet
     data_dir: ./train/uaic2022_training_data/images
-    label_file_list: [ ./train/uaic2022_training_data/labels/]
+    label_file_list: [ ./train/uaic2022_training_data/labels]
     ratio_list: [1]
     transforms:
     - DecodeImage:
