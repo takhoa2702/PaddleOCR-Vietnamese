@@ -1,7 +1,7 @@
 Global:
   debug: false
   use_gpu: true
-  epoch_num: 300
+  epoch_num: 10
   log_smooth_window: 20
   print_batch_step: 2
   save_model_dir: ./output/SAST/
@@ -52,8 +52,8 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./train/vietnamese/train_images
-    label_file_list: [ ./train/train_label.txt ]
+    data_dir: ./train/uaic2022_training_data/images
+    label_file_list: [ ./train/uaic2022_training_data/labels/]
     ratio_list: [1]
     transforms:
     - DecodeImage:
